@@ -90,6 +90,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>project2app</finalName>
 	</build>
 
 </project>
