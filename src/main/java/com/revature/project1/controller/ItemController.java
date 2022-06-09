@@ -3,6 +3,7 @@ package com.revature.project1.controller;
 import com.revature.project1.annotations.Author;
 import com.revature.project1.model.Item;
 import com.revature.project1.services.ItemService;
+import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
+    @Timed(value = "getallitems.time")
     @GetMapping() // localhost:8080/items
     public ResponseEntity<List<Item>> getItems() { // Get all items from "items" table in database
         LOGGER.info("getItems() started execution");
@@ -28,6 +30,7 @@ public class ItemController {
         return new ResponseEntity<List<Item>>(itemService.getItems(), HttpStatus.OK);
     }
 
+    @Timed(value = "additem.time")
     @PostMapping // localhost:8080/items
     public ResponseEntity<String> addItem(@RequestBody Item i) { // Add a single item to "items" table in database
         LOGGER.info("addItem() started execution");
@@ -58,6 +61,7 @@ public class ItemController {
         return responseEntity;
     }
 
+    @Timed(value = "deleteitem.time")
     @DeleteMapping("{itemId}") // localhost:8080/items/{itemId}
     public ResponseEntity<String> deleteItem(@PathVariable("itemId") int itemId) { // Delete a single item from "items" table in database
         LOGGER.info("deleteItem() started execution");
@@ -77,6 +81,7 @@ public class ItemController {
         return responseEntity;
     }
 
+    @Timed(value = "updateitem.time")
     @PutMapping // localhost:8080/items/{itemId}
     public ResponseEntity<String> updateItem(@RequestBody Item i) { // Updates a single item in "items" table in database
         LOGGER.info("updateItem() started execution");
@@ -107,6 +112,7 @@ public class ItemController {
         return responseEntity;
     }
 
+    @Timed(value = "getsingleitem.time")
     @GetMapping("{itemId}") // localhost:8080/items/{itemId}
     public ResponseEntity<Item> getProduct(@PathVariable("itemId") int itemId) { // Get a single item from "items" table in database
         LOGGER.info("getItem() started execution");

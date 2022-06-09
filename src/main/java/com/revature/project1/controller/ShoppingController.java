@@ -5,6 +5,7 @@ import com.revature.project1.annotations.Authenticate;
 import com.revature.project1.model.Order;
 import com.revature.project1.services.CartService;
 import com.revature.project1.services.ItemService;
+import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,7 @@ public class ShoppingController {
     @Autowired
     CartService cartService;
 
+    @Timed(value = "addtocart.time")
     @Authenticate
     @PostMapping("/additemtocart/{itemid}") // localhost:8080/additemtocart/{itemid}
     public ResponseEntity<String> addItemToCart(@PathVariable("itemid") int itemId) { // Add a single item to a user's cart in "carts" table in database
@@ -51,6 +53,7 @@ public class ShoppingController {
         return responseEntity;
     }
 
+    @Timed(value = "placeorder.time")
     @Authenticate
     @PostMapping("/placeorder") // localhost:8080/placeorder
     public ResponseEntity<String> placeOrder(@RequestBody Order o) { // Add a single order to "orders" table in database

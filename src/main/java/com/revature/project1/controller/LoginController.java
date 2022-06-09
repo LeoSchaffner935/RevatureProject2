@@ -5,6 +5,7 @@ import com.revature.project1.exceptions.LoginFailException;
 import com.revature.project1.model.User;
 import com.revature.project1.services.CartService;
 import com.revature.project1.services.UserService;
+import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,7 @@ public class LoginController {
     @Autowired
     CartService cartService;
 
+    @Timed(value = "regsiter.time")
     @PostMapping("/register") // localhost:8080/register
     public ResponseEntity<String> register(@RequestBody User u) {
         LOGGER.info("register() started execution");
@@ -49,6 +51,7 @@ public class LoginController {
         return responseEntity;
     }
 
+    @Timed(value = "login.time")
     @GetMapping("/login/{email}/{password}") // localhost:8080/login/{email}/{password}
     public ResponseEntity<User> login(@PathVariable("email") String email, @PathVariable("password") String password) { // Create session, Get a user and their cart from "users" table in database by supplying login credentials
         LOGGER.info("login() started execution");
@@ -62,6 +65,7 @@ public class LoginController {
         throw new LoginFailException("Login Failed: Invalid Credentials"); // Throws custom exception with HTTP 500 code as method return type is incompatible
     }
 
+    @Timed(value = "logout.time")
     @GetMapping("/logout") // localhost:8080/logout
     public ResponseEntity<String> logout() { // Logs out user
         LOGGER.info("logout() started execution");

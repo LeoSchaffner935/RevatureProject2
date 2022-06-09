@@ -3,6 +3,7 @@ package com.revature.project1.controller;
 import com.revature.project1.annotations.Author;
 import com.revature.project1.model.User;
 import com.revature.project1.services.UserService;
+import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @Timed(value = "getallusers.time")
     @GetMapping() // localhost:8080/users
     public ResponseEntity<List<User>> getUsers() { // Get all users from "users" table in database
         LOGGER.info("getUsers() started execution");
@@ -28,6 +30,7 @@ public class UserController {
         return new ResponseEntity<List<User>>(userService.getUsers(), HttpStatus.OK);
     }
 
+    @Timed(value = "deleteuser.time")
     @DeleteMapping("{userId}") // localhost:8080/users/{userId}
     public ResponseEntity<String> deleteUser(@PathVariable("userId") int userId) { // Delete a single user from "users" table in database
         LOGGER.info("deleteUser() started execution");
@@ -47,6 +50,7 @@ public class UserController {
         return responseEntity;
     }
 
+    @Timed(value = "updateuser.time")
     @PutMapping // localhost:8080/users/{userId}
     public ResponseEntity<String> updateUser(@RequestBody User u) { // Update a single user from "users" table in database
         LOGGER.info("updateUser() started execution");
@@ -72,6 +76,7 @@ public class UserController {
         return responseEntity;
     }
 
+    @Timed(value = "getsingleuser.time")
     @GetMapping("{userid}") // localhost:8080/users/{userid}
     public ResponseEntity<User> getUser(@PathVariable("userid") int userId) { // Get a single user from "users" table in database
         LOGGER.info("getUser() started execution");
