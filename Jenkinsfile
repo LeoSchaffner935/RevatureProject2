@@ -3,20 +3,28 @@ pipeline {
 
     stages {
         stage('Clone Repo') {
-            git 'https://github.com/LeoSchaffner935/RevatureProject2.git'
+            steps{
+                git 'https://github.com/LeoSchaffner935/RevatureProject2.git'
+            }
         }
 
         stage('Build App') {
-            bat 'mvn package -DskipTests'
+            steps {
+                bat 'mvn package -DskipTests'
+            }
         }
 
         stage('Build Image') {
-            dockerImage = docker.build('leoschaffner935/revatureproject2:latest')
+            steps {
+                dockerImage = docker.build('leoschaffner935/revatureproject2:latest')
+            }
         }
 
         stage('Deploy') {
-            docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                dockerImage.push('latest')
+            steps {
+                docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                    dockerImage.push('latest')
+                }
             }
         }
     }
