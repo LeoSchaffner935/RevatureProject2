@@ -15,13 +15,13 @@ pipeline {
         }
 
         stage('Build Image') {
-            steps {
+            script {
                 dockerImage = docker.build('leoschaffner935/revatureproject2:latest')
             }
         }
 
         stage('Deploy') {
-            steps {
+            script {
                 docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
                     dockerImage.push('latest')
                 }
