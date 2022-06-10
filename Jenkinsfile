@@ -1,31 +1,19 @@
-pipeline {
-    agent any
+node {
+    stage('Clone Repo') {
+        git 'https://github.com/LeoSchaffner935/RevatureProject2.git'
+    }
 
-    stages {
-        stage('Clone Repo') {
-            steps{
-                git 'https://github.com/LeoSchaffner935/RevatureProject2.git'
-            }
-        }
+    stage('Build Project') {
+        bat "mvn package -DskipTests"
+    }
 
-        stage('Build App') {
-            steps {
-                bat 'mvn package -DskipTests'
-            }
-        }
+    stage('Build Image') {
+        dockerImage = docker.build("leoschaffner935/revatureproject2:latest")
+    }
 
-        stage('Build Image') {
-            script {
-                dockerImage = docker.build('leoschaffner935/revatureproject2:latest')
-            }
-        }
-
-        stage('Deploy') {
-            script {
-                docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-                    dockerImage.push('latest')
-                }
-            }
+    stage('Deploy') {
+        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+            dockerImage.push('latest')
         }
     }
 }
