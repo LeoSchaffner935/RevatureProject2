@@ -2227,3 +2227,12 @@ Logging in leo@gmail.com
 2022-06-09_17:11:14.294 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
 2022-06-09_17:11:14.295 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
 2022-06-09_17:11:14.301 [http-nio-8081-exec-6] INFO  c.r.p.controller.UserController - User(userId=139, email=leo@gmail.com, password=root, cart=Cart(cartId=138, subtotal=0.0, itemList=[])) retrieved successfully
+2022-06-13_18:10:34.891 [http-nio-8081-exec-4] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-13_18:10:34.893 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-13_18:10:50.159 [http-nio-8081-exec-2] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-13_18:10:50.159 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-13_18:11:06.904 [http-nio-8081-exec-9] INFO  c.r.p.controller.UserController - getUser() started execution
+2022-06-13_18:11:06.904 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-13_18:11:06.961 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
+2022-06-13_18:11:06.984 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
+2022-06-13_18:11:06.990 [http-nio-8081-exec-9] INFO  c.r.p.controller.UserController - User(userId=139, email=leo@gmail.com, password=root, cart=Cart(cartId=138, subtotal=0.0, itemList=[])) retrieved successfully
