@@ -5,6 +5,7 @@ import com.revature.project1.exceptions.LoginFailException;
 import com.revature.project1.model.User;
 import com.revature.project1.services.CartService;
 import com.revature.project1.services.UserService;
+import io.micrometer.core.annotation.Counted;
 import io.micrometer.core.annotation.Timed;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -52,6 +53,7 @@ public class LoginController {
     }
 
     @Timed(value = "login.time")
+    @Counted(value = "login.fail.counter", recordFailuresOnly = true)
     @GetMapping("/login/{email}/{password}") // localhost:8080/login/{email}/{password}
     public ResponseEntity<User> login(@PathVariable("email") String email, @PathVariable("password") String password) { // Create session, Get a user and their cart from "users" table in database by supplying login credentials
         LOGGER.info("login() started execution");

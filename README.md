@@ -17,11 +17,20 @@ Error Budget = 168 hrs/week - 40 hrs/week = 128 hrs/week (~76%)
 Application Start Time: No longer than 25 seconds;
 SLO = 95%
 
-Ratio of 200 to 5XX Requests;
-SLO = 80%
+Application Restarts: Measures change in process start time within 1 day
 
-Ratio of 200 to 4XX Requests;
-SLO = 80%
+System CPU Usage
 
-Custom Metric - Execution Time of Requests: Ratio of requests less than 0.5 sec to all requests;
+Disk Free Bytes
+
+JVM Recent CPU Usage
+
+Custom Metric - Execution Time of GET, POST, and DELETE Requests: Ratio of requests less than 0.5 sec to all requests;
 SLO = 95%
+
+Custom Metric - Ratio of Total Login Attempts to Failures;
+SLO = 90%
+
+Logback Events: Records number of occurrences of each logback event type
+
+Application Logs: Loki imported aggregation of logback events 

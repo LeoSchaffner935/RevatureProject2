@@ -2236,3 +2236,200 @@ Logging in leo@gmail.com
 2022-06-13_18:11:06.961 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
 2022-06-13_18:11:06.984 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
 2022-06-13_18:11:06.990 [http-nio-8081-exec-9] INFO  c.r.p.controller.UserController - User(userId=139, email=leo@gmail.com, password=root, cart=Cart(cartId=138, subtotal=0.0, itemList=[])) retrieved successfully
+2022-06-14_14:47:01.889 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_14:47:01.890 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_14:47:05.439 [http-nio-8081-exec-7] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_14:47:05.439 [http-nio-8081-exec-7] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_14:47:11.611 [http-nio-8081-exec-8] INFO  c.r.p.controller.UserController - getUser() started execution
+2022-06-14_14:47:11.612 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_14:47:11.670 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
+2022-06-14_14:47:11.703 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing getUser() service
+2022-06-14_14:47:11.709 [http-nio-8081-exec-8] INFO  c.r.p.controller.UserController - User(userId=139, email=leo@gmail.com, password=root, cart=Cart(cartId=138, subtotal=0.0, itemList=[])) retrieved successfully
+2022-06-14_14:50:51.900 [http-nio-8081-exec-6] INFO  c.r.p.controller.LoginController - register() started execution
+2022-06-14_14:50:51.901 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_14:50:51.934 [http-nio-8081-exec-6] INFO  c.r.p.services.CartServiceImpl - Executing createCart() service
+2022-06-14_14:50:52.038 [http-nio-8081-exec-6] INFO  c.r.p.services.CartServiceImpl - Cart created for new user
+2022-06-14_14:50:52.038 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing addUser() service
+2022-06-14_14:50:52.074 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - User added in service
+2022-06-14_14:50:52.074 [http-nio-8081-exec-6] INFO  c.r.p.controller.LoginController - User(userId=143, email=sarina@gmail.com, password=root, cart=Cart(cartId=142, subtotal=0.0, itemList=[])) added successfully.
+Logging in sarina@gmail.com
+2022-06-14_14:50:52.075 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_14:50:52.100 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Logged in as sarina@gmail.com
+2022-06-14_14:51:05.565 [http-nio-8081-exec-8] INFO  c.r.p.controller.LoginController - register() started execution
+2022-06-14_14:51:05.566 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_14:51:05.588 [http-nio-8081-exec-8] INFO  c.r.p.services.CartServiceImpl - Executing createCart() service
+2022-06-14_14:51:05.595 [http-nio-8081-exec-8] INFO  c.r.p.services.CartServiceImpl - Cart created for new user
+2022-06-14_14:51:05.595 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing addUser() service
+2022-06-14_14:51:05.604 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - User added in service
+2022-06-14_14:51:05.605 [http-nio-8081-exec-8] INFO  c.r.p.controller.LoginController - User(userId=145, email=opeyemi@gmail.com, password=root, cart=Cart(cartId=144, subtotal=0.0, itemList=[])) added successfully.
+Logging in opeyemi@gmail.com
+2022-06-14_14:51:05.605 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_14:51:05.610 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Logged in as opeyemi@gmail.com
+2022-06-14_14:51:47.113 [http-nio-8081-exec-2] INFO  c.r.p.controller.LoginController - register() started execution
+2022-06-14_14:51:47.114 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_14:51:47.118 [http-nio-8081-exec-2] INFO  c.r.p.services.CartServiceImpl - Executing createCart() service
+2022-06-14_14:51:47.132 [http-nio-8081-exec-2] INFO  c.r.p.services.CartServiceImpl - Cart created for new user
+2022-06-14_14:51:47.132 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing addUser() service
+2022-06-14_14:51:47.141 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - User added in service
+2022-06-14_14:51:47.141 [http-nio-8081-exec-2] INFO  c.r.p.controller.LoginController - User(userId=147, email=nicole@gmail.com, password=root, cart=Cart(cartId=146, subtotal=0.0, itemList=[])) added successfully.
+Logging in nicole@gmail.com
+2022-06-14_14:51:47.142 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_14:51:47.144 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Logged in as nicole@gmail.com
+2022-06-14_14:52:09.645 [http-nio-8081-exec-4] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_14:52:09.646 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_14:52:09.665 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_14:52:09.676 [http-nio-8081-exec-4] WARN  c.r.p.controller.ItemController - Cannot add as name Sketchers already exists
+2022-06-14_14:52:16.834 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_14:52:16.835 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_14:52:16.841 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_14:52:16.844 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing addItem() service
+2022-06-14_14:52:16.856 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Item added in service
+2022-06-14_14:52:16.857 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - Item(itemId=148, itemName=Converse, qoh=300, price=50.0) added successfully
+2022-06-14_14:53:48.539 [http-nio-8081-exec-4] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_14:53:48.539 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_14:53:58.632 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - deleteItem() started execution
+2022-06-14_14:53:58.633 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_14:53:58.641 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing deleteItem() service
+2022-06-14_14:53:58.666 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Item deleted in service
+2022-06-14_14:53:58.667 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - Id 148 deleted successfully
+2022-06-14_14:54:05.368 [http-nio-8081-exec-8] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_14:54:05.369 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_14:54:12.887 [http-nio-8081-exec-9] INFO  c.r.p.controller.UserController - deleteUser() started execution
+2022-06-14_14:54:12.888 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_14:54:12.895 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing deleteUser() service
+2022-06-14_14:54:12.896 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing logout() service
+2022-06-14_14:54:12.932 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - User deleted in service
+2022-06-14_14:54:12.933 [http-nio-8081-exec-9] INFO  c.r.p.controller.UserController - Id 147 deleted successfully
+2022-06-14_14:56:54.017 [http-nio-8081-exec-5] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_14:56:54.018 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_14:58:48.758 [http-nio-8081-exec-6] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_14:58:48.759 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_15:28:51.728 [http-nio-8081-exec-10] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_15:28:51.731 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_15:28:55.369 [http-nio-8081-exec-1] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_15:28:55.369 [http-nio-8081-exec-1] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_15:43:42.949 [http-nio-8081-exec-2] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_15:43:42.950 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_15:43:45.080 [http-nio-8081-exec-5] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_15:43:45.081 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_16:02:46.007 [http-nio-8081-exec-5] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_16:02:46.021 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_16:02:48.745 [http-nio-8081-exec-6] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_16:02:48.745 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_16:02:49.977 [http-nio-8081-exec-7] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_16:02:49.978 [http-nio-8081-exec-7] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_16:16:52.134 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_16:16:52.135 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:16:52.739 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:16:52.826 [http-nio-8081-exec-6] WARN  c.r.p.controller.ItemController - Cannot add as name Nikes already exists
+2022-06-14_16:18:06.316 [http-nio-8081-exec-4] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_16:18:06.317 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:18:06.325 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:18:06.333 [http-nio-8081-exec-4] WARN  c.r.p.controller.ItemController - Cannot add as name Nikes already exists
+2022-06-14_16:18:07.442 [http-nio-8081-exec-5] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_16:18:07.442 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:18:07.447 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:18:07.449 [http-nio-8081-exec-5] WARN  c.r.p.controller.ItemController - Cannot add as name Nikes already exists
+2022-06-14_16:20:45.901 [http-nio-8081-exec-5] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_16:20:45.901 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:20:46.335 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:20:46.400 [http-nio-8081-exec-5] WARN  c.r.p.controller.ItemController - Cannot add as name Nikes already exists
+2022-06-14_16:20:47.580 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_16:20:47.581 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:20:47.587 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:20:47.593 [http-nio-8081-exec-6] WARN  c.r.p.controller.ItemController - Cannot add as name Nikes already exists
+2022-06-14_16:27:54.443 [http-nio-8081-exec-3] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:27:54.443 [http-nio-8081-exec-3] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:27:55.017 [http-nio-8081-exec-3] ERROR c.r.p.controller.LoginController - Login credentials invalid
+2022-06-14_16:29:04.458 [http-nio-8081-exec-10] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_16:29:04.458 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:29:04.493 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:29:04.504 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Executing addItem() service
+2022-06-14_16:29:04.605 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Item added in service
+2022-06-14_16:29:04.606 [http-nio-8081-exec-10] INFO  c.r.p.controller.ItemController - Item(itemId=149, itemName=Converse, qoh=300, price=50.0) added successfully
+2022-06-14_16:29:06.721 [http-nio-8081-exec-1] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_16:29:06.721 [http-nio-8081-exec-1] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:29:06.724 [http-nio-8081-exec-1] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_16:29:06.728 [http-nio-8081-exec-1] WARN  c.r.p.controller.ItemController - Cannot add as name Converse already exists
+2022-06-14_16:33:40.544 [http-nio-8081-exec-2] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:33:40.544 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:33:40.548 [http-nio-8081-exec-2] ERROR c.r.p.controller.LoginController - Login credentials invalid
+2022-06-14_16:33:41.532 [http-nio-8081-exec-4] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:33:41.533 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:33:41.541 [http-nio-8081-exec-4] ERROR c.r.p.controller.LoginController - Login credentials invalid
+2022-06-14_16:38:47.082 [http-nio-8081-exec-6] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:38:47.082 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:38:47.582 [http-nio-8081-exec-6] ERROR c.r.p.controller.LoginController - Login credentials invalid
+2022-06-14_16:40:21.997 [http-nio-8081-exec-4] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:40:21.997 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:40:22.001 [http-nio-8081-exec-4] ERROR c.r.p.controller.LoginController - Login credentials invalid
+2022-06-14_16:40:22.985 [http-nio-8081-exec-6] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:40:22.985 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:40:22.992 [http-nio-8081-exec-6] ERROR c.r.p.controller.LoginController - Login credentials invalid
+2022-06-14_16:40:23.964 [http-nio-8081-exec-8] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:40:23.964 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:40:23.967 [http-nio-8081-exec-8] ERROR c.r.p.controller.LoginController - Login credentials invalid
+2022-06-14_16:41:47.972 [http-nio-8081-exec-6] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_16:41:47.973 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_16:41:56.700 [http-nio-8081-exec-7] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:41:56.701 [http-nio-8081-exec-7] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:41:56.705 [http-nio-8081-exec-7] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_16:41:56.726 [http-nio-8081-exec-7] INFO  c.r.p.services.ItemServiceImpl - Logged in as leo@gmail.com
+2022-06-14_16:41:56.730 [http-nio-8081-exec-7] INFO  c.r.p.controller.LoginController - User(userId=139, email=leo@gmail.com, password=root, cart=Cart(cartId=138, subtotal=0.0, itemList=[])) logged in successfully
+2022-06-14_16:41:56.730 [http-nio-8081-exec-7] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_16:41:56.740 [http-nio-8081-exec-7] INFO  c.r.p.services.ItemServiceImpl - Logged in as leo@gmail.com
+2022-06-14_16:44:56.959 [http-nio-8081-exec-2] INFO  c.r.p.controller.LoginController - logout() started execution
+2022-06-14_16:44:56.960 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing logout() service
+2022-06-14_16:44:56.961 [http-nio-8081-exec-2] INFO  c.r.p.controller.LoginController - Logout Successful!
+2022-06-14_16:45:00.561 [http-nio-8081-exec-4] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:45:00.562 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:45:00.569 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_16:45:00.576 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Logged in as leo@gmail.com
+2022-06-14_16:45:00.579 [http-nio-8081-exec-4] INFO  c.r.p.controller.LoginController - User(userId=139, email=leo@gmail.com, password=root, cart=Cart(cartId=138, subtotal=0.0, itemList=[])) logged in successfully
+2022-06-14_16:45:00.579 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_16:45:00.588 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Logged in as leo@gmail.com
+2022-06-14_16:45:02.520 [http-nio-8081-exec-5] INFO  c.r.p.controller.LoginController - logout() started execution
+2022-06-14_16:45:02.520 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing logout() service
+2022-06-14_16:45:02.521 [http-nio-8081-exec-5] INFO  c.r.p.controller.LoginController - Logout Successful!
+2022-06-14_16:45:04.220 [http-nio-8081-exec-6] INFO  c.r.p.controller.LoginController - login() started execution
+2022-06-14_16:45:04.220 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_16:45:04.222 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_16:45:04.227 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Logged in as leo@gmail.com
+2022-06-14_16:45:04.229 [http-nio-8081-exec-6] INFO  c.r.p.controller.LoginController - User(userId=139, email=leo@gmail.com, password=root, cart=Cart(cartId=138, subtotal=0.0, itemList=[])) logged in successfully
+2022-06-14_16:45:04.231 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_16:45:04.233 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Logged in as leo@gmail.com
+2022-06-14_17:07:20.805 [http-nio-8081-exec-8] INFO  c.r.p.controller.LoginController - register() started execution
+2022-06-14_17:07:20.806 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_17:07:20.815 [http-nio-8081-exec-8] INFO  c.r.p.services.CartServiceImpl - Executing createCart() service
+2022-06-14_17:07:20.938 [http-nio-8081-exec-8] INFO  c.r.p.services.CartServiceImpl - Cart created for new user
+2022-06-14_17:07:20.939 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing addUser() service
+2022-06-14_17:07:20.970 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - User added in service
+2022-06-14_17:07:20.970 [http-nio-8081-exec-8] INFO  c.r.p.controller.LoginController - User(userId=151, email=nicole@gmail.com, password=root, cart=Cart(cartId=150, subtotal=0.0, itemList=[])) added successfully.
+Logging in nicole@gmail.com
+2022-06-14_17:07:20.970 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing login() service
+2022-06-14_17:07:20.972 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Logged in as nicole@gmail.com
+2022-06-14_17:08:39.801 [http-nio-8081-exec-6] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_17:08:39.801 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_17:08:39.815 [http-nio-8081-exec-6] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_17:08:39.820 [http-nio-8081-exec-6] WARN  c.r.p.controller.ItemController - Cannot add as name Converse already exists
+2022-06-14_17:08:46.749 [http-nio-8081-exec-8] INFO  c.r.p.controller.ItemController - addItem() started execution
+2022-06-14_17:08:46.749 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_17:08:46.754 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_17:08:46.758 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Executing addItem() service
+2022-06-14_17:08:46.769 [http-nio-8081-exec-8] INFO  c.r.p.services.ItemServiceImpl - Item added in service
+2022-06-14_17:08:46.770 [http-nio-8081-exec-8] INFO  c.r.p.controller.ItemController - Item(itemId=152, itemName=test, qoh=300, price=50.0) added successfully
+2022-06-14_17:08:51.851 [http-nio-8081-exec-9] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-14_17:08:51.852 [http-nio-8081-exec-9] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-14_17:08:59.698 [http-nio-8081-exec-10] INFO  c.r.p.controller.ItemController - deleteItem() started execution
+2022-06-14_17:08:59.698 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Executing isItemExists() service
+2022-06-14_17:08:59.713 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Executing deleteItem() service
+2022-06-14_17:08:59.746 [http-nio-8081-exec-10] INFO  c.r.p.services.ItemServiceImpl - Item deleted in service
+2022-06-14_17:08:59.747 [http-nio-8081-exec-10] INFO  c.r.p.controller.ItemController - Id 152 deleted successfully
+2022-06-14_17:09:36.946 [http-nio-8081-exec-4] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-14_17:09:36.947 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-14_17:09:43.131 [http-nio-8081-exec-5] INFO  c.r.p.controller.UserController - deleteUser() started execution
+2022-06-14_17:09:43.132 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing isUserExists() service
+2022-06-14_17:09:43.140 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing deleteUser() service
+2022-06-14_17:09:43.141 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing logout() service
+2022-06-14_17:09:43.153 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - User deleted in service
+2022-06-14_17:09:43.153 [http-nio-8081-exec-5] INFO  c.r.p.controller.UserController - Id 151 deleted successfully

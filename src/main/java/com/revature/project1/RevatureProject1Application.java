@@ -1,6 +1,7 @@
 package com.revature.project1;
 
 import com.revature.project1.annotations.Author;
+import io.micrometer.core.aop.CountedAspect;
 import io.micrometer.core.aop.TimedAspect;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +17,8 @@ public class RevatureProject1Application {
 	public static void main(String[] args) { SpringApplication.run(RevatureProject1Application.class, args); }
 
 	@Bean // Creates timer metric, added to all controller methods
-	public TimedAspect timedAspect(MeterRegistry registry) {
-		return new TimedAspect(registry);
-	}
+	public TimedAspect timedAspect(MeterRegistry registry) { return new TimedAspect(registry); }
+
+	@Bean // Creates counter metric, used to track login failures
+	public CountedAspect countedAspect(MeterRegistry registry) { return new CountedAspect(registry); }
 }
