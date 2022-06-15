@@ -1,5 +1,0 @@
-groups:
-  - name: custom_rules
-    rules:
-    - alert: P2Down
-      expr: up{job="project2"} == 0

@@ -1,0 +1,50 @@
+groups:
+  - name: p2_rules
+    rules:
+
+    - alert: P2Down
+      expr: up{job="project2"} == 0
+      for: 16h
+      labels:
+        severity: page
+
+    - alert: AppStartTime
+      expr: application_started_time_seconds{job="project2"} > 25
+      labels:
+        severity: ticket
+
+    - alert: GetItemsRequestLatency
+      expr: getallitems_time_seconds_max{job="project2"} >= 0.5
+      for:
+      labels:
+        severity: ticket
+
+    - alert: GetUsersRequestLatency
+      expr: getallusers_time_seconds_max{job="project2"} >= 0.5
+      labels:
+        severity: ticket
+
+    - alert: AddItemRequestLatency
+      expr: additem_time_seconds_max{job="project2"} >= 0.5
+      labels:
+        severity: ticket
+
+    - alert: RegsiterRequestLatency
+      expr: register_time_seconds_max{job="project2"} >= 0.5
+      labels:
+        severity: ticket
+
+    - alert: DeleteItemRequestLatency
+      expr: deleteitem_time_seconds_max{job="project2"} >= 0.5
+      labels:
+        severity: ticket
+
+    - alert: DeleteUserRequestLatency
+      expr: deleteuser_time_seconds_max{job="project2"} >= 0.5
+      labels:
+        severity: ticket
+
+    - alert: LoginFailures
+      expr: login_fail_counter_total{job="project2"} >= 0.1*(login_time_seconds_count{job="project2", exception="none"} + login_time_seconds_count{job="project2", exception="LoginFailException"})
+      labels:
+        severity: ticket
