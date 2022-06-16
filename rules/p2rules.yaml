@@ -45,6 +45,6 @@ groups:
         severity: ticket
 
     - alert: LoginFailures
-      expr: login_fail_counter_total{job="project2"} >= 0.1*(login_time_seconds_count{job="project2", exception="none"} + login_time_seconds_count{job="project2", exception="LoginFailException"})
+      expr: ((login_fail_counter_total / ignoring(class,exception,instance,job,method,result) sum(login_time_seconds_count)) >= bool 0.1) == 1
       labels:
         severity: ticket
