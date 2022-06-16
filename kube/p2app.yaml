@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: p2app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: p2app
+  template:
+    metadata:
+      labels:
+        app: p2app
+    spec:
+      containers:
+      - name: project2
+        image: leoschaffner935/revatureproject2:latest
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: project2app
+spec:
+  selector:
+    app: p2app
+  ports:
+  - name: http
+    protocol: TCP
+    port: 8081
+    nodePort: 30010
+  type: NodePort
