@@ -29,7 +29,7 @@ groups:
       labels:
         severity: ticket
 
-    - alert: RegsiterRequestLatency
+    - alert: RegisterRequestLatency
       expr: register_time_seconds_max{job="project2"} >= 0.5
       labels:
         severity: ticket
