@@ -9,7 +9,7 @@ groups:
         severity: page
 
     - alert: AppStartTime
-      expr: application_started_time_seconds{job="project2"} > 25
+      expr: application_started_time_seconds{job="project2"} >= 25
       labels:
         severity: ticket
 

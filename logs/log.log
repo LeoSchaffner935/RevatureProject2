@@ -2816,3 +2816,9 @@ Logging in tufail@gmail.com
 2022-06-15_21:03:14.025 [http-nio-8081-exec-4] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
 2022-06-15_21:03:16.880 [http-nio-8081-exec-5] INFO  c.r.p.controller.UserController - getUsers() started execution
 2022-06-15_21:03:16.880 [http-nio-8081-exec-5] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-16_10:34:48.890 [http-nio-8081-exec-1] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-16_10:34:48.891 [http-nio-8081-exec-1] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
+2022-06-16_10:34:53.088 [http-nio-8081-exec-3] INFO  c.r.p.controller.ItemController - getItems() started execution
+2022-06-16_10:34:53.089 [http-nio-8081-exec-3] INFO  c.r.p.services.ItemServiceImpl - Executing getItems() service
+2022-06-16_10:43:38.210 [http-nio-8081-exec-2] INFO  c.r.p.controller.UserController - getUsers() started execution
+2022-06-16_10:43:38.210 [http-nio-8081-exec-2] INFO  c.r.p.services.ItemServiceImpl - Executing getUsers() service
