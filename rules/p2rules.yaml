@@ -2,48 +2,65 @@ groups:
   - name: p2_rules
     rules:
 
+    # Alerts if the application isn't running during the target uptime window (10-6 EST)
     - alert: P2Down
       expr: up{job="project2"} == 0
       for: 16h
       labels:
         severity: page
 
+    # Alerts if the application start time exceeds 25 seconds
     - alert: AppStartTime
       expr: application_started_time_seconds{job="project2"} >= 25
       labels:
         severity: ticket
 
+    # Counts how many instances have restarted more than 4 times in the past hour
+    # Alerts if more than 5% of instances in the job are in this state
+    - alert: AppTooManyRestarts
+      expr: avg without (instance) (changes(process_start_time_seconds[1h]) > bool 4) >= .05
+      for: 10m
+      labels:
+        severity: ticket
+
+    # Alerts if the current latency of GET /items exceeds 0.5 seconds
     - alert: GetItemsRequestLatency
       expr: getallitems_time_seconds_max{job="project2"} >= 0.5
       for:
       labels:
         severity: ticket
 
+    # Alerts if the current latency of GET /users exceeds 0.5 seconds
     - alert: GetUsersRequestLatency
       expr: getallusers_time_seconds_max{job="project2"} >= 0.5
       labels:
         severity: ticket
 
+    # Alerts if the current latency of POST /items exceeds 0.5 seconds
     - alert: AddItemRequestLatency
       expr: additem_time_seconds_max{job="project2"} >= 0.5
       labels:
         severity: ticket
 
+    # Alerts if the current latency of POST /register exceeds 0.5 seconds
     - alert: RegsiterRequestLatency
       expr: register_time_seconds_max{job="project2"} >= 0.5
       labels:
         severity: ticket
 
+    # Alerts if the current latency of DELETE /items exceeds 0.5 seconds
     - alert: DeleteItemRequestLatency
       expr: deleteitem_time_seconds_max{job="project2"} >= 0.5
       labels:
         severity: ticket
 
+    # Alerts if the current latency of DELETE /users exceeds 0.5 seconds
     - alert: DeleteUserRequestLatency
       expr: deleteuser_time_seconds_max{job="project2"} >= 0.5
       labels:
         severity: ticket
 
+    # Alerts if more than 10% of all login attempts are failures
     - alert: LoginFailures
       expr: ((login_fail_counter_total / ignoring(class,exception,instance,job,method,result) sum(login_time_seconds_count)) >= bool 0.1) == 1
       labels:
