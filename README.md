@@ -17,7 +17,7 @@ Error Budget = 168 hrs/week - 40 hrs/week = 128 hrs/week (~76%)
 Application Start Time: No longer than 25 seconds;
 SLO = 95%
 
-Application Restarts: Measures change in process start time within 1 day
+Application Restarts: Measures change in process start time within 1 hour
 
 System CPU Usage
 
