@@ -48,3 +48,11 @@ groups:
       expr: ((login_fail_counter_total / ignoring(class,exception,instance,job,method,result) sum(login_time_seconds_count)) >= bool 0.1) == 1
       labels:
         severity: ticket
+
+#counts how many instances have restarted more than 4 times in the past hour
+#alert if more than 5% of instances in the job are in this state
+    - alert: AppTooManyRestarts
+      expr: avg without (instance) (changes(process_start_time_seconds[1h]) > bool 4) >= .05
+      for: 10m
+      labels:
+        severity: ticket
