@@ -18,7 +18,7 @@ groups:
     # Counts how many instances have restarted more than 4 times in the past hour
     # Alerts if more than 5% of instances in the job are in this state
     - alert: AppTooManyRestarts
-      expr: avg without (instance) (changes(process_start_time_seconds[1h]) > bool 4) >= .05
+      expr: avg (changes(process_start_time_seconds{job="project2"}[1h]) > bool 4) >= .05
       for: 10m
       labels:
         severity: ticket
